@@ -9,16 +9,18 @@ go:
     - 1.2
     - 1.3
     - tip
-exclude:
-  jobs:
-    - go: 1.0
-      arch: ppc64le
-    - go: 1.1
-      arch: ppc64le
-    - go: 1.2
-      arch: ppc64le
-    - go: 1.3
-      arch: ppc64le
+
+jobs:
+ exclude:
+ exclude:
+  - go: 1.0
+    arch: ppc64le
+  - go: 1.1
+    arch: ppc64le
+  - go: 1.2
+    arch: ppc64le
+  - go: 1.3
+    arch: ppc64le
 
 script:
     - go test
