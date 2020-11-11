@@ -21,6 +21,9 @@ jobs:
     arch: ppc64le
   - go: 1.3
     arch: ppc64le
+  - go: tip
+    arch:ppc64le
+    
 
 script:
     - go test
